@@ -20,11 +20,11 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="wrapper">
         <div class="navigation">
           <div class="logo"><a href="index.html">ExploreEra</a></div>
-          <nav class="nav">
+          <nav class="nav" id="nav">
             <ul>
               <li class="nav-item"><a class="item-link" href="#">Home</a></li>
               <li class="nav-item">
@@ -37,12 +37,19 @@
               <li class="nav-item">
                 <a class="item-link" href="#">Our offers</a>
               </li>
-              <li class="nav-item user-icon">
+              <li class="nav-item user-icon" onclick="openForm()" id="sign-in">
                 <a class="item-link" href="#">
                   <i class="fa-regular fa-user"></i
                 ></a>
               </li>
             </ul>
+            
+                  <ul class="sign-in">
+                    <li class="sign-in-item"><a class="sign-in-item-link" href="#">sign in</a></li>
+                    <li class="sign-in-item"><a class="sign-in-item-link" href="#">sign up</a></li>
+                    <li class="sign-in-item"><a class="sign-in-item-link" href="#">sign out</a></li>
+                  </ul>
+                
           </nav>
         </div>
       </div>
@@ -50,6 +57,7 @@
 
     <main>
       <section class="hero"></section>
+      <section class="section-2"></section>
     </main>
     <footer></footer>
     <script src="js/script.js"></script>

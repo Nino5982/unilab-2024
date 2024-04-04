@@ -3,7 +3,9 @@
 // $fontRoboto: "Roboto", sans-serif;
 $fontLogo: "Kalnia", serif;
 $fontRoboto: "Roboto", sans-serif;
-$darckorange: #C85100;
+$darckorange: #c85100;
+$darckgray: #424244;
+$borderOrange: 1px solid #ff6700;
 
 .header {
   position: fixed;
@@ -11,12 +13,18 @@ $darckorange: #C85100;
   left: 0;
   z-index: 99;
   width: 100%;
-  height: 105px;
   background: transparent;
+  padding: 20px 0;
 
-
+  &.active-header {
+    background-color: white;
+    & a {
+      color: $darckgray !important;
+    }
+  }
   .navigation {
     @extend %flexbetween;
+    position: relative;
 
     .logo {
       a {
@@ -24,11 +32,13 @@ $darckorange: #C85100;
         font-size: 48px;
         line-height: 64.56px;
         color: white;
-        
       }
     }
 
     .nav {
+      .sign-in {
+        display: none;
+      }
       ul {
         @extend %flexbetween;
         margin: 0 auto;
@@ -41,12 +51,42 @@ $darckorange: #C85100;
           font-weight: 400;
           color: white;
           letter-spacing: 2px;
-          &:hover{
+          &:hover {
             color: $darckorange;
           }
         }
-        .user-icon{
-          padding:3px;
+        .user-icon {
+          padding: 3px;
+        }
+      }
+      &.show-popup {
+        .sign-in {
+          max-width: 247px;
+          width: 100%;
+          background-color: white;
+          border-radius: 10px;
+          color: black;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding: 10px;
+          position: absolute;
+          right: 0;
+          top: 28px + 105px - 20px;
+
+          .sign-in-item {
+            border-bottom: $borderOrange;
+            width: 100%;
+            
+            
+            .sign-in-item-link {
+              color: $darckgray;
+              @extend %font-24-400;
+              padding: 10px 20px;
+              display: inline-block;
+              
+            }
+          }
         }
       }
     }

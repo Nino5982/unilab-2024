@@ -19,12 +19,25 @@
 @import "./blocks/header.scss";
 @import "./blocks/footer.scss";
 
-
+$fontRoboto: "Roboto", sans-serif;
+$darckgray: #424244;
 
 %flexbetween {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+%font-24-400 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+
+
+body{
+    font-family: $fontRoboto;
+    color: $darckgray;
 }
 .wrapper {
   max-width: 1580px;
@@ -35,4 +48,8 @@
 .hero {
   background-image: url(../images/hero-img.png);
   height: 560px;
+}
+.section-2{
+    height: 3000px;
+    background: rebeccapurple;
 }
