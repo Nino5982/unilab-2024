@@ -12,27 +12,27 @@
 //   font-weight: 100;
 //   font-style: normal;
 // }
+
+
+
 @import "./blocks/reset.scss";
 @import "./blocks/header.scss";
 @import "./blocks/footer.scss";
 
-// ცვლადი
-// $white:#FFFFFF;
-// $fontRoboto: "Roboto", sans-serif;
-// შაბლონი @extend %flexbetween;
 
-%flexbetween{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+%flexbetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.wrapper{
-    max-width: 1580px;
-    width: 100%;
-    margin: 0 auto;
+.wrapper {
+  max-width: 1580px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.hero{
-    background-image: url(../images/hero-img.png);
-    height: 560px;
+.hero {
+  background-image: url(../images/hero-img.png);
+  height: 560px;
 }
