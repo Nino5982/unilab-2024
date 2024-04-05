@@ -25,7 +25,7 @@
         <div class="header__inner">
           <div class="logo"><a href="index.html">ExploreEra</a></div>
           <nav class="nav" id="nav">
-            <ul class="nav__list">
+            <ul class="nav__list" id="nav-list">
               <li class="nav__list-item">
                 <a class="nav__link" href="#">Home</a>
               </li>
@@ -62,30 +62,48 @@
                 <a class="signin__link" href="#">sign out</a>
               </li>
             </ul>
-            <!-- burger menu -->
-            <div id="burger-menu" class="burger-menu" onclick="openMobileMenu()">
-                            <span class="burger-menu__line"></span>
-                            <span class="burger-menu__line"></span>
-                            <span class="burger-menu__line"></span>
-                            <span class="burger-menu__line"></span>
-                        </div>
-          </nav>
-          
+
             <!-- mobile menu continue -->
-            <ul class="mobile-menu hidden">
-              <li class="">
-                <a class="" href="#">sign in</a>
-              </li>
-              <li class="">
-                <a class="" href="#">sign up</a>
-              </li>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Our services</a></li>
-              <li><a href="#">Our offers</a></li>
-            </ul>
-          
+            <div class="mobile-menu" id="mobile-menu">
+              <div class="mobile-menu__navigation">
+                <ul class="mobile-menu__sign-in">
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">sign in</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">sign up</a>
+                  </li>
+                </ul>
+                <ul class="mobile-menu__navigation-menu">
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">Home</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">About us</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">Blogs</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">Our services</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">Our offers</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- burger menu -->
+              <div
+                id="burger-menu"
+                class="burger-menu"
+                onclick="openMobileMenu()">
+                <span class="burger-menu__line"></span>
+                <span class="burger-menu__line"></span>
+                <span class="burger-menu__line"></span>
+                <span class="burger-menu__line"></span>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
     </header>

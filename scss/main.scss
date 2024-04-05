@@ -17,19 +17,27 @@
   padding: 20px 0;
   transition: all 0.2s ease-in-out;
 
-  &.active-header {
-    background-color: white;
-    & a {
-      color: $darckgray;
-      &:hover {
-        color: $darckorange;
-      }
-    }
-  }
   &__inner {
     @extend %flexbetween;
     gap: 20px;
     position: relative;
+  }
+}
+
+.active-header {
+  background-color: white;
+  .logo {
+    a {
+      color: $darckgray !important;
+    }
+  }
+  .nav__link {
+    color: $darckgray !important;
+  }
+  .burger-menu{
+    &__line{
+        background-color:$darckgray;
+    }
   }
 }
 
@@ -55,14 +63,15 @@
     font-size: 28px;
     line-height: 32px;
     font-weight: 400;
-    color: white !important;
+    color: white;
     letter-spacing: 2px;
     transition: all 0.2s ease-in-out;
     &:hover {
-      color: $darckorange;
+      color: $orange;
     }
   }
 }
+
 .signin {
   max-width: 247px;
   width: 100%;
@@ -99,9 +108,17 @@
   position: relative;
   margin: 0 auto;
   transform: rotate(0deg);
-  transition: 0.5s ease-in-out;
+  transition: 0.25s ease-in-out;
   cursor: pointer;
   display: none;
+
+  &.open {
+    margin: 0;
+    padding: 0;
+    .burger-menu__line{
+        background-color: $darckgray;
+    }
+  }
 
   &__line {
     display: block;
@@ -136,10 +153,14 @@
 
   &.open span:nth-child(2) {
     transform: rotate(45deg);
+    background-color: black;
+    width: 24px;
   }
 
   &.open span:nth-child(3) {
     transform: rotate(-45deg);
+    background-color: black;
+    width: 24px;
   }
 
   &.open span:nth-child(4) {
@@ -147,6 +168,38 @@
     width: 0%;
     left: 50%;
   }
+}
+
+.mobile-menu {
+  &.open {
+    padding: 20px 48px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: -28px;
+    display: flex;
+    justify-content: center;
+  }
+ 
+
+  &__item {
+    margin-bottom: 16px;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    color: $darckgray;
+    :hover {
+      color: $orange;
+    }
+  }
+  &__sign-in {
+    border-bottom: 1px solid black;
+  }
+  
 }
 
 .hero {
