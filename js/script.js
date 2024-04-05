@@ -38,3 +38,14 @@ function openMobileMenu() {
   mobileNav.classList.toggle("hidden");
   mobileMenu.classList.toggle("bg-white");
 }
+
+
+
+addEventListener("resize", (event) => {
+      header.classList.remove("active-header");
+  burger.classList.remove("open");
+    mobileNav.classList.add("hidden");
+  mobileMenu.classList.remove("bg-white");
+
+
+});
