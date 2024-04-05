@@ -8,6 +8,8 @@ window.onscroll = function () {
   // We add pageYOffset for compatibility with IE.
   if (window.scrollY >= scrollTrigger || window.scrollY >= scrollTrigger) {
     header.classList.add("active-header");
+    signIn.classList.remove("signin");
+    signIn.classList.add("hidden");
   } else {
     header.classList.remove("active-header");
   }

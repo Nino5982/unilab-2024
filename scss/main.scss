@@ -13,17 +13,27 @@
   height: 65px;
   background: transparent;
   padding: 20px 0;
+  transition: all 0.2s ease-in-out;
 
   &.active-header {
     background-color: white;
     & a {
-      color: $darckgray !important;
+      color: $darckgray;
+      &hover:{
+        color:$darckorange
+      }
     }
   }
   &__inner {
     @extend %flexbetween;
     gap: 20px;
     position: relative;
+  }
+  &:hover {
+    background-color: white;
+    & a {
+      color: $darckgray !important;
+    }
   }
 }
 
@@ -37,21 +47,24 @@
 }
 
 .nav {
-    position: relative;
+  position: relative;
   &__list {
     @extend %flexbetween;
     margin: 0 auto;
     gap: 40px;
-  }
-  &__list-item {
-    font-family: $fontRoboto;
-    font-size: 28px;
-    line-height: 32px;
-    font-weight: 400;
-    color: white;
-    letter-spacing: 2px;
-    &:hover {
-      color: $darckorange;
+
+    &__list-link {
+      font-family: $fontRoboto;
+      font-size: 28px;
+      line-height: 32px;
+      font-weight: 400;
+      color: white;
+      letter-spacing: 2px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: $darckorange;
+      }
     }
   }
 }
@@ -79,8 +92,8 @@
     @extend %font-24-400;
     padding: 10px 20px;
     display: inline-block;
-    &:hover{
-        color:$orange ;
+    &:hover {
+      color: $orange;
     }
   }
 }
