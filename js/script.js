@@ -5,6 +5,9 @@ const burger = document.getElementById("burger-menu");
 const navList = document.getElementById("nav-list");
 
 const mobileNav = document.querySelector(".mobile-menu__navigation");
+const mobileMenu =  document.getElementById("mobile-menu");
+
+
 let scrollTrigger = 60;
 
 // active header on scroll
@@ -32,5 +35,6 @@ function openForm() {
 function openMobileMenu() {
   header.classList.toggle("active-header");
   burger.classList.toggle("open");
-  mobileNav.classList.add("show-navigation");
+  mobileNav.classList.toggle("hidden");
+  mobileMenu.classList.toggle("bg-white");
 }

@@ -171,18 +171,7 @@
 }
 
 .mobile-menu {
-  &.open {
-    padding: 20px 48px;
-    background-color: white;
-    border-radius: 10px;
-    position: absolute;
-    right: 0;
-    top: -28px;
-    display: flex;
-    justify-content: center;
-  }
- 
-
+   
   &__item {
     margin-bottom: 16px;
   }
@@ -217,5 +206,15 @@
   }
   .burger-menu {
     display: block;
+  }
+  .mobile-menu{
+    padding: 20px 48px;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: -28px;
+     display: flex;
+    justify-content: center;  
+   
   }
 }
