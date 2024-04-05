@@ -1,6 +1,7 @@
 const Header = document.getElementById("header");
 const nav = document.getElementById("nav");
 const signIn = document.getElementById("sign-in");
+const burger = document.getElementById("burger-menu");
 let scrollTrigger = 60;
 
 // active header on scroll
@@ -26,5 +27,6 @@ function openForm() {
 
 // burger
 function openMobileMenu() {
+  burger.classList.toggle("open")
   
 }

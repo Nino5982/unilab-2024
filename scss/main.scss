@@ -3,6 +3,7 @@
 // @import "./blocks/header.scss";
 // @import "./blocks/footer.scss";
 @import "./blocks/global.scss";
+@import "./blocks/_responsive.scss";
 
 // header
 .header {
@@ -20,7 +21,7 @@
     background-color: white;
     & a {
       color: $darckgray;
-      &hover: {
+      &:hover {
         color: $darckorange;
       }
     }
@@ -47,19 +48,18 @@
     @extend %flexbetween;
     margin: 0 auto;
     gap: 40px;
+  }
 
-    &__list-link {
-      font-family: $fontRoboto;
-      font-size: 28px;
-      line-height: 32px;
-      font-weight: 400;
-      color: white;
-      letter-spacing: 2px;
-      transition: all 0.2s ease-in-out;
-
-      &:hover {
-        color: $darckorange;
-      }
+  &__link {
+    font-family: $fontRoboto;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+    color: white !important;
+    letter-spacing: 2px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: $darckorange;
     }
   }
 }
@@ -93,20 +93,22 @@
   }
 }
 .burger-menu {
-  width: 60px;
-  height: 45px;
+  padding: 10px;
+  width: 30px;
+  height: 18px;
   position: relative;
-  margin: 50px auto;
+  margin: 0 auto;
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  display: none;
 
   &__line {
     display: block;
     position: absolute;
-    height: 9px;
+    height: 3px;
     width: 100%;
-    background: #d3531a;
+    background: white;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -123,7 +125,7 @@
   }
 
   & span:nth-child(4) {
-    top: 36px;
+    bottom: 0;
   }
 
   &.open span:nth-child(1) {
@@ -133,12 +135,10 @@
   }
 
   &.open span:nth-child(2) {
-    
     transform: rotate(45deg);
   }
 
   &.open span:nth-child(3) {
-  
     transform: rotate(-45deg);
   }
 
@@ -149,9 +149,6 @@
   }
 }
 
-@media (min-width: $breakpoint-tablet) {
-}
-
 .hero {
   background-image: url(../images/hero-img.png);
   height: 560px;
@@ -159,4 +156,13 @@
 .section-2 {
   height: 3000px;
   background: rebeccapurple;
+}
+
+@media (max-width: $tablet) {
+  .nav__list {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
 }

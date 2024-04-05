@@ -1,5 +1,0 @@
-@media (max-width: tablet){
-.nav__list{
-    display: none;
-}
-}
