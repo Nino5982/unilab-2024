@@ -1,55 +1,98 @@
-// .kalnia-<uniquifier> {
-//   font-family: "Kalnia", serif;
-//   font-optical-sizing: auto;
-//   font-weight: <weight>;
-//   font-style: normal;
-//   font-variation-settings:
-//     "wdth" 100;
-// }
-
-// .roboto-thin {
-//   font-family: "Roboto", sans-serif;
-//   font-weight: 100;
-//   font-style: normal;
-// }
-
-
-
 @import "./blocks/reset.scss";
-@import "./blocks/header.scss";
-@import "./blocks/footer.scss";
+@import "./blocks/vars.scss";
+// @import "./blocks/header.scss";
+// @import "./blocks/footer.scss";
+@import "./blocks/global.scss";
 
-$fontRoboto: "Roboto", sans-serif;
-$darckgray: #424244;
-
-%flexbetween {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-%font-24-400 {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 400;
-}
-
-
-
-body{
-    font-family: $fontRoboto;
-    color: $darckgray;
-}
-.wrapper {
-  max-width: 1580px;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
   width: 100%;
-  margin: 0 auto;
+  height: 65px;
+  background: transparent;
+  padding: 20px 0;
+
+  &.active-header {
+    background-color: white;
+    & a {
+      color: $darckgray !important;
+    }
+  }
+  &__inner {
+    @extend %flexbetween;
+    gap: 20px;
+    position: relative;
+  }
+}
+
+.logo {
+  a {
+    font-family: $fontLogo;
+    font-size: 48px;
+    line-height: 64.56px;
+    color: white;
+  }
+}
+
+.nav {
+    position: relative;
+  &__list {
+    @extend %flexbetween;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  &__list-item {
+    font-family: $fontRoboto;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+    &:hover {
+      color: $darckorange;
+    }
+  }
+}
+.signin {
+  max-width: 247px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 105px;
+
+  &__item {
+    border-bottom: $borderOrange;
+    width: 100%;
+  }
+
+  &__link {
+    color: $darckgray;
+    @extend %font-24-400;
+    padding: 10px 20px;
+    display: inline-block;
+    &:hover{
+        color:$orange ;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
 }
 
 .hero {
   background-image: url(../images/hero-img.png);
   height: 560px;
 }
-.section-2{
-    height: 3000px;
-    background: rebeccapurple;
+.section-2 {
+  height: 3000px;
+  background: rebeccapurple;
 }

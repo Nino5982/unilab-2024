@@ -1,8 +1,9 @@
-// // active header on scroll
 const Header = document.getElementById("header");
 const nav = document.getElementById("nav");
+const signIn = document.getElementById("sign-in");
 let scrollTrigger = 60;
 
+// active header on scroll
 window.onscroll = function () {
   // We add pageYOffset for compatibility with IE.
   if (window.scrollY >= scrollTrigger || window.scrollY >= scrollTrigger) {
@@ -15,5 +16,6 @@ window.onscroll = function () {
 // sign ion form popup
 
 function openForm() {
- nav.classList.toggle("show-popup");
+  signIn.classList.toggle("hidden");
+  signIn.classList.toggle("signin");
 }

@@ -21,45 +21,69 @@
 
   <body>
     <header class="header" id="header">
-      <div class="wrapper">
-        <div class="navigation">
+      <div class="container">
+        <div class="header__inner">
           <div class="logo"><a href="index.html">ExploreEra</a></div>
           <nav class="nav" id="nav">
-            <ul>
-              <li class="nav-item"><a class="item-link" href="#">Home</a></li>
-              <li class="nav-item">
-                <a class="item-link" href="#">About us</a>
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#">Home</a>
               </li>
-              <li class="nav-item"><a class="item-link" href="#">Blog</a></li>
-              <li class="nav-item">
-                <a class="item-link" href="#">Our services</a>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#">About us</a>
               </li>
-              <li class="nav-item">
-                <a class="item-link" href="#">Our offers</a>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#">Blog</a>
               </li>
-              <li class="nav-item user-icon" onclick="openForm()" id="sign-in">
-                <a class="item-link" href="#">
-                  <i class="fa-regular fa-user"></i
-                ></a>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#">Our services</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#">Our offers</a>
+              </li>
+              <li
+                class="nav__list-item user-icon"
+                onclick="openForm()"
+                id="user-icon">
+                <a class="nav__list-link" href="#">
+                  <i class="fa-regular fa-user"></i>
+                </a>
               </li>
             </ul>
-            
-                  <ul class="sign-in">
-                    <li class="sign-in-item"><a class="sign-in-item-link" href="#">sign in</a></li>
-                    <li class="sign-in-item"><a class="sign-in-item-link" href="#">sign up</a></li>
-                    <li class="sign-in-item"><a class="sign-in-item-link" href="#">sign out</a></li>
-                  </ul>
-                
+            <!-- sign in popup -->
+            <ul class="hidden" id="sign-in">
+              <li class="signin__item">
+                <a class="signin__link" href="#">sign in</a>
+              </li>
+              <li class="signin__item">
+                <a class="signin__link" href="#">sign up</a>
+              </li>
+              <li class="signin__item">
+                <a class="signin__link" href="#">sign out</a>
+              </li>
+              <li class="signin__item hidden">
+                <!-- mobile menu continue -->
+                <ul class="mobile-nav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Our services</a></li>
+                  <li><a href="#">Our offers</a></li>
+                </ul>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
     </header>
+    <div class="wrapper">
+      <main class="main">
+        <section class="hero"></section>
+        <section class="section-2"></section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
 
-    <main>
-      <section class="hero"></section>
-      <section class="section-2"></section>
-    </main>
-    <footer></footer>
     <script src="js/script.js"></script>
   </body>
 </html>

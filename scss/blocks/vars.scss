@@ -1,0 +1,26 @@
+
+
+%flexbetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+%font-24-400 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+// ცვლადი
+
+$breakpoint-tablet: 1260px;
+$breakpoint-mobile: 960px;
+
+// fonts
+$fontLogo: "Kalnia", serif;
+$fontRoboto: "Roboto", sans-serif;
+// colors
+$darckorange: #c85100;
+$darckgray: #424244;
+$orange:#FF6700;
+$borderOrange: 1px solid $orange;
