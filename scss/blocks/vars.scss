@@ -10,6 +10,11 @@
     line-height: 28px;
     font-weight: 400;
 }
+%font-32-400{
+font-size: 32px;
+font-weight: 400;
+line-height: 37.5px;
+}
 
 // ცვლადი
 
@@ -22,7 +27,9 @@ $mobile: 960px;
 $fontLogo: "Kalnia", serif;
 $fontRoboto: "Roboto", sans-serif;
 // colors
-$darckorange: #c85100;
+
 $darckgray: #424244;
+$bgGray:#EAE9E9;
 $orange:#FF6700;
+$darckorange: #c85100;
 $borderOrange: 1px solid $orange;

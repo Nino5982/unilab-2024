@@ -1,0 +1,49 @@
+.footer {
+  background-color: $bgGray;
+  @extend %font-24-400;
+  padding: 20px 15px;
+
+  &__inner {
+    @extend %flexbetween;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__block-1,
+  &__block-2,
+  &__block-3,
+  .nav-list,
+  .contact-list
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__logo {
+    a {
+      color: $darckgray;
+    }
+  }
+}
+.description {
+  max-width: 282px;
+  width: 100%;
+}
+.list-title {
+  @extend %font-32-400;
+  margin-bottom: 20px;
+}
+.social-icons {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.subscription{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+   
+}
