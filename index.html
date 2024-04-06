@@ -156,10 +156,12 @@
               <li><a class="contact-link" href="tel:+555111222">555111222</a></li>
             </ul>
             <div>
-              <form action="#" class="subscription">
-                <label for="email">Subscribe news</label>
-                <input class="add-email" type="email" placeholder="Email" />
-                <button class="submit-email" type="button" name="Subscribe">
+              <div class="subscription">
+                <form action="#" class="subscription__form">
+                <label  class="subscription__title list-title" for="email">Subscribe news</label>
+                <div class="subscription__inner">
+                  <input class="subscription__input" type="email" placeholder="Email" />
+                <button class="subscription__btn btn" type="button" name="Subscribe">
                   <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_304_316)">
                       <path
@@ -173,7 +175,11 @@
                     </defs>
                   </svg>
                 </button>
+                </div>
+                
               </form>
+              </div>
+              
             </div>
           </div>
         </div>
