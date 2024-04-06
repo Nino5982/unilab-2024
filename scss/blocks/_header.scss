@@ -190,21 +190,4 @@
   height: 560px;
 }
 
-@media (max-width: $tablet) {
-  .nav__list {
-    display: none;
-  }
-  .burger-menu {
-    display: block;
-  }
-  .mobile-menu {
-    padding: 20px 0 20px 48px;
-    border-radius: 10px;
-    position: absolute;
-    right: 0;
-    top: -28px;
-    display: flex;
-    justify-content: space-between;
-    width: 238px;
-  }
-}
+
