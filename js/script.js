@@ -33,7 +33,6 @@ function openForm() {
 
 // burger
 function openMobileMenu() {
-  header.classList.toggle("active-header");
   burger.classList.toggle("open");
   mobileNav.classList.toggle("hidden");
   mobileMenu.classList.toggle("bg-white");
