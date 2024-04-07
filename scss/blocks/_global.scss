@@ -24,20 +24,33 @@ body {
 
 .container {
   max-width: 1550px;
-  width:82%;
+  width: 82%;
   margin: 0 auto;
-//   padding: 0 15px;
+  //   padding: 0 15px;
 }
 
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
-.bg-white{
+.bg-white {
   background-color: white;
 }
 
-.btn{
-  border:none;
+.btn {
+  border: none;
   background: transparent;
+}
+.btn-primary {
+  background: $orange;
+  border-radius: 20px;
+  padding: 20px 40px;
+  :hover {
+    background-color: $darckorange;
+  }
+}
+.section-heding{
+font-size: 40px;
+font-weight: 500;
+line-height: 46.88px;
 }

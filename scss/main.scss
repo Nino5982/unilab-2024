@@ -5,3 +5,32 @@
 @import "./blocks/global.scss";
 @import "./blocks/_responsive.scss";
 
+.hero {
+  background: url(../images/hero-img.png) center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+ &__inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 325px;
+    width: 100%;
+   text-align: center;
+       display: flex;
+    flex-direction: column;
+
+  }
+  &__title{
+    color: white;
+    margin-bottom: 12px;
+    span{
+        font-size: 64px;
+        line-height: 75px;
+        letter-spacing: 4px;
+        font-weight: 600;
+    }
+  }
+}
+
