@@ -73,6 +73,12 @@
       }
     }
   }
+  .blog {
+    .cards-wrapper {
+      grid-template-columns: repeat(2, auto);
+      row-gap: 20px;
+    }
+  }
 }
 
 @media (max-width: $mobile) {
@@ -110,12 +116,12 @@
   }
 
   .services {
-     &__link {
+    &__link {
       text-align: left;
-     }
-    .cards{
-  flex-direction: column-reverse;
-}
+    }
+    .cards {
+      flex-direction: column-reverse;
+    }
 
     .card {
       width: 100%;
@@ -125,5 +131,16 @@
         line-height: 23px;
       }
     }
+  }
+   .blog {
+    .cards-wrapper {
+      grid-template-columns: repeat(1, auto);
+      row-gap: 12px;
+    }
+  }
+  .booking{
+     &__dropdown{
+      width: 100%;
+     }
   }
 }

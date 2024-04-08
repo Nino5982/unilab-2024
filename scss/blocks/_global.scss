@@ -67,4 +67,8 @@ body {
         @extend %font-20-400;
 
   }
+  iframe{
+     aspect-ratio: 16 / 9;
+  width: 100%;
+  }
 }

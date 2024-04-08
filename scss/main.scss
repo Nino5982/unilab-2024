@@ -83,7 +83,7 @@
     font-weight: 500;
     line-height: 21px;
   }
-  &__info{
+  &__info {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -93,16 +93,18 @@
 .slider {
   .slick-list {
     overflow: hidden;
+    margin: 60px 0;
   }
   .slick-track {
     display: flex;
+    gap: 20px;
   }
   min-width: 0px;
   position: relative;
 
   .slick-arrow {
     position: absolute;
-    top: 0;
+    top: -50px;
     z-index: 10;
     font-size: 0px;
     height: 40px;
@@ -116,6 +118,56 @@
   .slick-arrow.slick-next {
     right: 0;
     background: url(../images/icons/Chevron_Right.svg) 0 0 /100% no-repeat;
+  }
+}
+
+.blog {
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    gap: 20px;
+    row-gap: 40px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+.booking {
+  background: $bgGray;
+  padding: 51px 0;
+  .booking__form {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  &__form {
+    display: flex;
+    column-gap: 80px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__dropdown {
+    position: relative;
+    width: 45%;
+    background: white;
+    border-radius: 12px;
+    padding: 30px 50px;
+    select,
+    option{
+      font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+    border: none;
+    width: 100%;
+    }
+  }
+  label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
   }
 }
 
