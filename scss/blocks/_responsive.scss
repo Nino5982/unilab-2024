@@ -2,6 +2,10 @@
   .container {
     width: 90%;
   }
+  .btn-primary{
+  font-size: 20px;
+  line-height: 23px;
+  }
   .nav__list {
     display: none;
   }
@@ -44,12 +48,29 @@
   .description {
     max-width: none;
   }
+
+ .section {
+  &__title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46.88px;
+  }
+  &__description{
+        @extend %font-20-400;
+  }
+}
+
+.card {
+  flex: 0 1 48%;
+}
+
 }
 
 @media (max-width: $mobile) {
   .container {
     width: 80%;
   }
+
   .logo a {
     font-size: 28px;
     line-height: 37px;
@@ -69,4 +90,9 @@
       flex-direction: column;
     }
   }
+
+    // hero section start
+  
+  // hero section end
+
 }

@@ -51,9 +51,7 @@ a {
 	color: inherit;
 }
 
-* {
-    box-sizing: border-box;
-}
+
 
 iframe {
     border-width: 0px;
@@ -62,11 +60,15 @@ iframe {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+	box-sizing: border-box;
 }
 input{
 	border: none;
 	background: transparent;
 	font-size: inherit;
 	color: inherit;
+}
+img{
+	max-width: 100%;
+	height: auto;
 }
