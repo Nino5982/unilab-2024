@@ -55,32 +55,32 @@
   }
   .cards-wrapper {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
     gap: 20px;
   }
+}
 
+.card {
+  width: 23%;
 
-  
+  &__img {
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
   }
-
-  .card {
-    flex: 0 1 23%;
-    &__img {
-      border-radius: 20px;
-      overflow: hidden;
-      object-fit: cover;
-      object-position: center;
-      margin-bottom: 10px;
-    }
-    &__title {
-      @extend %font-28-400;
-      margin-bottom: 10px;
-      font-weight: 500;
-    }
-    &__description {
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 21px;
-    }
+  &__title {
+    @extend %font-28-400;
+    margin-bottom: 10px;
+    font-weight: 500;
   }
+  &__description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+}

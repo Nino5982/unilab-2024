@@ -2,9 +2,9 @@
   .container {
     width: 90%;
   }
-  .btn-primary{
-  font-size: 20px;
-  line-height: 23px;
+  .btn-primary {
+    font-size: 20px;
+    line-height: 23px;
   }
   .nav__list {
     display: none;
@@ -49,21 +49,29 @@
     max-width: none;
   }
 
- .section {
-  &__title {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 46.88px;
+  .section {
+    &__title {
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 46.88px;
+    }
+    &__description {
+      @extend %font-20-400;
+    }
   }
-  &__description{
-        @extend %font-20-400;
+  .services {
+    .card {
+      width: 46%;
+      &__title {
+        font-size: 28px;
+        line-height: 32px;
+      }
+      &__description {
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
   }
-}
-
-.card {
-  flex: 0 1 48%;
-}
-
 }
 
 @media (max-width: $mobile) {
@@ -90,9 +98,14 @@
       flex-direction: column;
     }
   }
-
-    // hero section start
+  .services {
   
-  // hero section end
-
+    .card {
+      width: 100%;
+      &__title {
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+  }
 }
