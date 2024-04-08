@@ -48,3 +48,13 @@ addEventListener("resize", (event) => {
 
 
 });
+
+
+
+// slick
+
+$(document).ready(function(){
+  $('.slider').slick({
+    
+  });
+});

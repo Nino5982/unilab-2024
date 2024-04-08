@@ -54,6 +54,7 @@
       font-size: 40px;
       font-weight: 500;
       line-height: 46.88px;
+      margin-bottom: 30px;
     }
     &__description {
       @extend %font-20-400;
@@ -98,10 +99,27 @@
       flex-direction: column;
     }
   }
+
+  .section {
+    margin-bottom: 24px;
+    &__title {
+      font-size: 22px;
+      line-height: 25px;
+      margin-bottom: 15px;
+    }
+  }
+
   .services {
-  
+     &__link {
+      text-align: left;
+     }
+    .cards{
+  flex-direction: column-reverse;
+}
+
     .card {
       width: 100%;
+      margin-bottom: 24px;
       &__title {
         font-size: 20px;
         line-height: 23px;
