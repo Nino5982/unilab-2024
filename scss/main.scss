@@ -3,7 +3,8 @@
 @import "./blocks/header.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/global.scss";
-@import "./blocks/_responsive.scss";
+@import "./blocks/slick-theme";
+
 
 .hero {
   background: url(../images/hero-img.png) center no-repeat;
@@ -84,3 +85,8 @@
     line-height: 21px;
   }
 }
+
+
+
+
+@import "./blocks/_responsive.scss";
