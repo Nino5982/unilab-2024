@@ -3,8 +3,7 @@
 @import "./blocks/header.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/global.scss";
-@import "./blocks/slick-theme";
-
+@import "./blocks/slick.scss";
 
 .hero {
   background: url(../images/hero-img.png) center no-repeat;
@@ -84,9 +83,40 @@
     font-weight: 500;
     line-height: 21px;
   }
+  &__info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
+.slider {
+  .slick-list {
+    overflow: hidden;
+  }
+  .slick-track {
+    display: flex;
+  }
+  min-width: 0px;
+  position: relative;
 
-
+  .slick-arrow {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    font-size: 0px;
+    height: 40px;
+    width: 40px;
+    border: none;
+  }
+  .slick-arrow.slick-prev {
+    left: 0;
+    background: url(../images/icons/Chevron_left.svg) 0 0 /100% no-repeat;
+  }
+  .slick-arrow.slick-next {
+    right: 0;
+    background: url(../images/icons/Chevron_Right.svg) 0 0 /100% no-repeat;
+  }
+}
 
 @import "./blocks/_responsive.scss";
