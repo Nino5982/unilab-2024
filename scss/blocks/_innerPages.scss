@@ -1,0 +1,30 @@
+.registration_page {
+  .header {
+    background-color: $bgGray;
+    .logo {
+      a {
+        color: $darckgray;
+      }
+    }
+    .nav__link {
+      display: none;
+    }
+    
+     #user-icon {
+        color: $darckgray;
+        display: block;
+        a:hover {
+          color: $darckorange;
+        }
+      }
+    .burger-menu {
+      &__line {
+        background-color: $darckgray;
+      }
+    }
+  }
+  .sign-in_form {
+    background-color: aqua;
+    height: 700px;
+  }
+}

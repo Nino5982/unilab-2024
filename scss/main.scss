@@ -4,6 +4,7 @@
 @import "./blocks/footer.scss";
 @import "./blocks/global.scss";
 @import "./blocks/slick.scss";
+// @import "./blocks/innerPages.scss";
 
 .hero {
   background: url(../images/hero-img.png) center no-repeat;
@@ -170,5 +171,7 @@
     left: 50px;
   }
 }
+
+
 
 @import "./blocks/_responsive.scss";
