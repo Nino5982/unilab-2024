@@ -40,9 +40,10 @@ body {
 .btn {
   border: none;
   background: transparent;
+  outline: none;
 }
 .btn-primary {
-  background: $orange;
+  background-color: $orange;
   border-radius: 20px;
   padding: 20px 40px;
   width: 100%;
@@ -50,10 +51,11 @@ body {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  :hover {
+ 
+}
+ .btn-primary:hover {
     background-color: $darckorange;
   }
-}
 
 .section {
   margin-bottom: 60px;

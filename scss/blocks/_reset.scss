@@ -28,6 +28,9 @@ footer, header, hgroup, main, menu, nav, section {
 *[hidden] {
     display: none;
 }
+*:focus {
+  outline: none;
+}
 body {
 	line-height: 1;
 }
